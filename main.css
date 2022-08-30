@@ -1,5 +1,7 @@
 body {
-    background-color: #4b3e4f;
+    background-image: url('./space.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
     color: white;
     font-family: "Akkurat",Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 100px;
@@ -10,17 +12,27 @@ a {
     color: white;
 }
 
+.content {
+    width: 99.9%;
+    height: 90vh;
+    margin: 10px 0;
+    background: #18111D;
+    opacity: 0.5;
+}
+
 .header {
-    background-color: #251f27;
+    background-color: #18111D;
     display: flex;
     justify-content: space-between;
     padding: 8px;
   }
 
 .footer {
-    background-color: #251f27;
+    background-color: #18111D;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 16px;
-    margin-top: 200px;
 }
