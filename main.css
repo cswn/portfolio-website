@@ -1,0 +1,26 @@
+body {
+    background-color: #4b3e4f;
+    color: white;
+    font-family: "Akkurat",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: #251f27;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+.footer {
+    background-color: #251f27;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-top: 200px;
+}
