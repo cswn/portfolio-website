@@ -1,10 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-image: url('./space.jpg');
+    background-color: black;
     background-repeat:no-repeat;
     background-size:100% 100vh;
     color: white;
-    font-family: "Akkurat",Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight: 100px;
+    font-family: "Abel", sans-serif;
+    font-weight: 100;
+    box-sizing: border-box;
+    padding: 2rem;
+    position: relative;
+}
+
+@font-face {
+    font-family: "Abel";
+    src: url('./Abel-Regular.ttf');
+}
+
+.title-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 7rem;
+    letter-spacing: .8rem;
 }
 
 a {
@@ -13,26 +43,24 @@ a {
 }
 
 .content {
+    background-image: 
+        linear-gradient(
+            rgba(24, 17, 29, 0.5), 
+            rgba(24, 17, 29, 0.5)),
+        url('/img/space.jpg');
+    background-size: cover;
+    background-position: top;
     width: 99.9%;
-    height: 90vh;
-    margin: 10px 0;
-    background: #18111D;
-    opacity: 0.5;
+    height: 95vh;
+    margin: 1rem 0;
 }
-
-.header {
-    background-color: #18111D;
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-  }
 
 .footer {
     background-color: #18111D;
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 16px;
+    gap: 1rem;
+    padding: 1.6rem;
 }
