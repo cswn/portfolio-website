@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +29,7 @@ section {
 
 @font-face {
     font-family: "Abel";
-    src: url('fonts/Abel-Regular.ttf');
+    src: url('../fonts/Abel-Regular.ttf');
 }
 
 @keyframes moveInTop {
@@ -167,7 +169,7 @@ a {
 
 .section-2__right-box--photo-box {
     height: 35rem;
-    background-color: rgb(148, 0, 211, 0.2);
+    background-color: rgba(148, 0, 211, 0.2);
 }
 
 .section-2__right-box--image {
