@@ -64,6 +64,7 @@ section {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
 }
 
 .section-1__title-box--text {
@@ -170,7 +171,7 @@ a {
 }
 
 .section-2__right-box--image {
-    transition: all .4s;
+    transition: all .8s;
     width: 50rem;
     height: 35rem;
     clip-path: polygon(0 10%, 25% 0, 100% 0, 100% 90%, 75% 100%, 0 100%);
@@ -186,7 +187,6 @@ a {
 
 .section-3__content {
     background-color: white;
-    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -195,21 +195,26 @@ a {
     height: 95vh;
 }
 
-.section-3__projects {
+.section-3__projects-1, 
+.section-3__projects-2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8rem;
+    margin-top: 8rem;
 }
 
 .section-3__title {
-    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    font-size: 6rem;
     text-align: center;
     margin: 6rem;
 }
 
 .section-3__card {
-    background: rgb(148, 0, 211, 0.8);
+    background: rgb(80, 0, 114);
     font-size: 2rem;
     width: 30rem;
     height: 35rem;
@@ -218,6 +223,10 @@ a {
     align-items: center;
     justify-content: center;
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.section-3__card:hover {
+    cursor: pointer;
 }
 
 .section-3__card--btn {
