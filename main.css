@@ -134,24 +134,34 @@ a {
 .section-2__left-box--title {
     font-size: 6rem;
     text-align: center;
+    letter-spacing: 0.3rem;
 }
 
 .section-2__left-box--info {
     font-size: 2rem;
+    padding: 1rem 1rem 0rem 2rem;
+}
+
+.section-2__left-box--chess {
+    text-decoration: underline;
+}
+
+.section-2__left-box--buttons {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 .section-2__left-box--btn {
     font-size: 1.8rem;
+    text-align: center;
     color: black;
     border-radius: 25px;
     width: 18rem;
     background-color: azure;
     padding: 1.2rem;
-    margin: 5rem;
-}
-
-.section-2__left-box--btn:hover {
-    cursor: pointer;
 }
 
 .section-2__right-box--photo-box {
@@ -176,12 +186,52 @@ a {
 
 .section-3__content {
     background-color: white;
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 99.9%; 
     height: 95vh;
+}
+
+.section-3__projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.section-3__title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 6rem;
+}
+
+.section-3__card {
+    background: rgb(148, 0, 211, 0.8);
+    font-size: 2rem;
+    width: 30rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.section-3__card--btn {
+    background: white;
+    color: black;
+    margin: 2rem;
+    padding: 1rem 2.2rem;
+    border-radius: 25px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.section-3__card--btn:active {
+    transform: translateY(.2rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 
 .footer {
