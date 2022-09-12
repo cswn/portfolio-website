@@ -6,33 +6,45 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: black;
-    background-repeat:no-repeat;
-    background-size:100% 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
     color: white;
     font-family: "Abel", sans-serif;
     font-weight: 100;
     box-sizing: border-box;
     padding: 2rem;
-    position: relative;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
 }
 
 @font-face {
     font-family: "Abel";
-    src: url('./Abel-Regular.ttf');
+    src: url('fonts/Abel-Regular.ttf');
 }
 
-.title-box {
+#section-1 {
+    background-image: url('/img/space.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.section-1__title-box {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.title {
+.section-1__title-box--text {
     font-size: 7rem;
     letter-spacing: .8rem;
 }
@@ -42,25 +54,61 @@ a {
     color: white;
 }
 
-.content {
+.scroll-down {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-down__icon {
+    width: 6rem;
+    height: 6rem;
+    transition: all .4s;
+}
+
+.scroll-down__icon:hover {
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+}
+
+#section-2 {
+    position: relative;
+}
+
+.section-2__content {
     background-image: 
         linear-gradient(
-            rgba(24, 17, 29, 0.5), 
-            rgba(24, 17, 29, 0.5)),
-        url('/img/space.jpg');
+            rgba(23, 16, 29, 0.7), 
+            rgba(23, 16, 29, 0.7));
     background-size: cover;
-    background-position: top;
-    width: 99.9%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 99.9%; 
     height: 95vh;
-    margin: 1rem 0;
 }
 
 .footer {
     background-color: #18111D;
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     padding: 1.6rem;
+    font-size: 1.8rem;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer__icons--github-icon,
+.footer__icons--linkedin-icon {
+    width: 3rem;
+    height: 3rem;
 }
