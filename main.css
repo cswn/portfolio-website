@@ -30,6 +30,28 @@ section {
     src: url('fonts/Abel-Regular.ttf');
 }
 
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 #section-1 {
     background-image: url('/img/space.jpg');
     background-size: cover;
@@ -47,6 +69,7 @@ section {
 .section-1__title-box--text {
     font-size: 7rem;
     letter-spacing: .8rem;
+    animation: moveInTop .5s ease-out;
 }
 
 a {
@@ -65,6 +88,7 @@ a {
     width: 6rem;
     height: 6rem;
     transition: all .4s;
+    animation: moveInBottom .5s ease-out;
 }
 
 .scroll-down__icon:hover {
@@ -82,6 +106,76 @@ a {
             rgba(23, 16, 29, 0.7), 
             rgba(23, 16, 29, 0.7));
     background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 99.9%; 
+    height: 95vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-2__left-box,
+.section-2__right-box {
+    width: 50rem;
+    height: 35rem;
+    /* border: solid 1px white; */
+}
+
+.section-2__left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2__left-box--title {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.section-2__left-box--info {
+    font-size: 2rem;
+}
+
+.section-2__left-box--btn {
+    font-size: 1.8rem;
+    color: black;
+    border-radius: 25px;
+    width: 18rem;
+    background-color: azure;
+    padding: 1.2rem;
+    margin: 5rem;
+}
+
+.section-2__left-box--btn:hover {
+    cursor: pointer;
+}
+
+.section-2__right-box--photo-box {
+    height: 35rem;
+    background-color: rgb(148, 0, 211, 0.2);
+}
+
+.section-2__right-box--image {
+    transition: all .4s;
+    width: 50rem;
+    height: 35rem;
+    clip-path: polygon(0 10%, 25% 0, 100% 0, 100% 90%, 75% 100%, 0 100%);
+}
+
+.section-2__right-box--image:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+}
+
+#section-3 {
+    position: relative;
+}
+
+.section-3__content {
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
