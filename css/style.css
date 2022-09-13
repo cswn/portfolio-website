@@ -64,18 +64,20 @@ a {
       width: 3rem;
       height: 3rem; }
 
-.section-1 {
+.header {
+  min-height: 100vh;
+  width: 100%;
   background-image: url("/img/space.jpg");
   background-size: cover;
   background-position: top;
   position: relative; }
-  .section-1__title-box {
+  .header__title-box {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase; }
-    .section-1__title-box--text {
+    .header__title-box--text {
       font-size: 7rem;
       letter-spacing: .8rem;
       animation: moveInTop .5s ease-out; }
@@ -124,7 +126,14 @@ a {
       font-size: 2rem;
       padding: 1rem 1rem 0rem 2rem; }
     .section-2__left-box--chess {
-      text-decoration: underline; }
+      text-decoration: underline;
+      transition: all .2s ease-in-out; }
+      .section-2__left-box--chess:hover {
+        padding: 0 .4rem;
+        background: #fff;
+        color: #17101d;
+        text-decoration: none;
+        border-radius: 1.5rem; }
   .section-2__buttons {
     margin: 4rem;
     display: flex;
