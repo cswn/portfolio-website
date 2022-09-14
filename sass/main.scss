@@ -54,8 +54,8 @@
     &__content {
         background-image: 
             linear-gradient(
-                rgba($dark-purple, .7), 
-                rgba($dark-purple, .7));
+                rgba($dark-purple, .8), 
+                rgba($dark-purple, .8));
         background-size: cover;
         position: absolute;
         top: 50%;
@@ -109,16 +109,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 6rem;
 
         &--projects,
-        &--resume,
-        &--contact {
+        &--resume {
             font-size: 1.8rem;
             text-align: center;
             color: $black;
             border-radius: 25px;
-            width: 10rem;
+            width: 18rem;
             background-color: azure;
             padding: 0.8rem 1.2rem;
             transition: all .2s;
@@ -131,9 +130,11 @@
     }
     
     &__right-box {
+        // outline-offset: 10rem;
         &--photo-box {
             height: 100%;
-            background-color: rgba($light-purple, 0.2);
+            outline: solid 1.2rem $black;
+            outline-offset: -1.6rem;
         }
         
         &--image {
@@ -275,4 +276,17 @@
             height: 6rem;
         }
     }
+}
+
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .3;
 }

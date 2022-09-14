@@ -103,7 +103,7 @@ a {
 .section-2 {
   position: relative; }
   .section-2__content {
-    background-image: linear-gradient(rgba(23, 16, 29, 0.7), rgba(23, 16, 29, 0.7));
+    background-image: linear-gradient(rgba(23, 16, 29, 0.8), rgba(23, 16, 29, 0.8));
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -142,21 +142,22 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem; }
-    .section-2__buttons--projects, .section-2__buttons--resume, .section-2__buttons--contact {
+    gap: 6rem; }
+    .section-2__buttons--projects, .section-2__buttons--resume {
       font-size: 1.8rem;
       text-align: center;
       color: #000;
       border-radius: 25px;
-      width: 10rem;
+      width: 18rem;
       background-color: azure;
       padding: 0.8rem 1.2rem;
       transition: all .2s; }
-      .section-2__buttons--projects:hover, .section-2__buttons--resume:hover, .section-2__buttons--contact:hover {
+      .section-2__buttons--projects:hover, .section-2__buttons--resume:hover {
         transform: scale(1.2); }
   .section-2__right-box--photo-box {
     height: 100%;
-    background-color: rgba(148, 0, 211, 0.2); }
+    outline: solid 1.2rem #000;
+    outline-offset: -1.6rem; }
   .section-2__right-box--image {
     transition: all .8s;
     width: 100%;
@@ -261,3 +262,15 @@ a {
     .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
       width: 6rem;
       height: 6rem; }
+
+.background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: .3; }
