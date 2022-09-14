@@ -8,14 +8,14 @@
     &__side {
         background: $dark-purple;
         font-size: 2rem;
-        backface-visibility: hidden;
-        transition: all .8s;
-        box-shadow: 0 1rem 2rem rgba($black,.2);
         height: 35rem;
+        transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        backface-visibility: hidden;
+        box-shadow: 0 1rem 2rem rgba($black,.2);
 
         &--front {
             @include flex-center;
@@ -51,7 +51,7 @@
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
