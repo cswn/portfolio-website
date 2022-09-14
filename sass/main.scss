@@ -69,8 +69,8 @@
     
     &__left-box,
     &__right-box {
-        width: 50rem;
-        height: 35rem;
+        width: 35%;
+        height: 45%;
     }
     
     &__left-box {
@@ -125,14 +125,14 @@
     
     &__right-box {
         &--photo-box {
-            height: 35rem;
+            height: 100%;
             background-color: rgba($light-purple, 0.2);
         }
         
         &--image {
             transition: all .8s;
-            width: 50rem;
-            height: 35rem;
+            width: 100%;
+            height: 100%;
             clip-path: polygon(0 10%, 25% 0, 100% 0, 100% 90%, 75% 100%, 0 100%);
         }
         
@@ -156,8 +156,7 @@
         height: 95vh;
     }
     
-    &__projects-1, 
-    &__projects-2 {
+    &__projects {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -173,20 +172,39 @@
         text-align: center;
         margin: 6rem;
     }
+}
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    width: 30rem;
+    height: 35rem;
     
-    &__card {
+    &__side {
         background: $dark-purple;
         font-size: 2rem;
-        width: 30rem;
-        height: 35rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        backface-visibility: hidden;
+        transition: all .8s;
         box-shadow: 0 1rem 2rem rgba($black,.2);
+        height: 35rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
 
-        &:hover {
-            cursor: pointer;
+        &--front {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--back {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: rotateY(180deg);
         }
 
         &--btn {
@@ -202,5 +220,13 @@
                 box-shadow: 0 .5rem 1rem rgba($black,.2);
             }
         }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
     }
 }
