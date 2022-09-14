@@ -54,7 +54,8 @@ a {
   align-items: center;
   gap: 1rem;
   padding: 1.6rem;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  margin-top: 2.5rem; }
   .footer__icons {
     display: flex;
     justify-content: center;
@@ -78,8 +79,11 @@ a {
     transform: translate(-50%, -50%);
     text-transform: uppercase; }
     .header__title-box--text {
-      font-size: 7rem;
+      text-transform: uppercase;
       letter-spacing: .8rem;
+      font-size: 7rem;
+      text-align: center;
+      margin: 6rem;
       animation: moveInTop .5s ease-out; }
 
 .scroll-down {
@@ -105,7 +109,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 99.9%;
+    width: 100%;
     height: 95vh;
     display: flex;
     justify-content: space-evenly;
@@ -132,22 +136,24 @@ a {
         padding: 0 .4rem;
         background: #fff;
         color: #17101d;
-        text-decoration: none;
-        border-radius: 1.5rem; }
+        text-decoration: none; }
   .section-2__buttons {
     margin: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem; }
-    .section-2__buttons--projects, .section-2__buttons--resume {
+    gap: 3rem; }
+    .section-2__buttons--projects, .section-2__buttons--resume, .section-2__buttons--contact {
       font-size: 1.8rem;
       text-align: center;
       color: #000;
       border-radius: 25px;
-      width: 18rem;
+      width: 10rem;
       background-color: azure;
-      padding: 1.2rem; }
+      padding: 0.8rem 1.2rem;
+      transition: all .2s; }
+      .section-2__buttons--projects:hover, .section-2__buttons--resume:hover, .section-2__buttons--contact:hover {
+        transform: scale(1.2); }
   .section-2__right-box--photo-box {
     height: 100%;
     background-color: rgba(148, 0, 211, 0.2); }
@@ -167,7 +173,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 99.9%;
+    width: 100%;
     height: 95vh; }
   .section-3__projects {
     display: flex;
@@ -176,12 +182,12 @@ a {
     gap: 8rem;
     margin-top: 8rem; }
   .section-3__title {
-    color: black;
     text-transform: uppercase;
-    letter-spacing: .6rem;
-    font-size: 6rem;
+    letter-spacing: .8rem;
+    font-size: 7rem;
     text-align: center;
-    margin: 6rem; }
+    margin: 6rem;
+    color: black; }
 
 .card {
   perspective: 150rem;
@@ -205,22 +211,53 @@ a {
       align-items: center;
       justify-content: center; }
     .card__side--back {
+      background-color: #9491AD;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       transform: rotateY(180deg); }
+    .card__side--info {
+      margin-bottom: 4rem; }
     .card__side--btn {
       background: #fff;
       color: #000;
-      margin: 2rem;
       padding: 1rem 2.2rem;
       border-radius: 25px;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
       .card__side--btn:active {
         transform: translateY(0.2rem);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      .card__side--btn:last-child {
+        margin-top: 2rem; }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+
+.section-4 {
+  position: relative;
+  height: 25vh; }
+  .section-4__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 100%; }
+  .section-4__title {
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-size: 7rem;
+    text-align: center;
+    margin: 6rem;
+    font-size: 3rem;
+    color: white; }
+  .section-4__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; }
+    .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
+      width: 6rem;
+      height: 6rem; }
