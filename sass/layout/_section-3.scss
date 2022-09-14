@@ -1,0 +1,24 @@
+.section-3 {
+    position: relative;
+
+    &__content {
+        background-color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        height: 95vh;
+    }
+    
+    &__projects {
+        @include flex-center;
+        gap: 8rem;
+        margin-top: 8rem;
+    }
+    
+    &__title {
+        @include section-title;
+        color: black;
+    }
+}

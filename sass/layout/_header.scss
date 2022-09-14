@@ -1,0 +1,21 @@
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__title-box {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+
+        &--text {
+            @include section-title;
+            animation: moveInTop .5s ease-out;
+        }
+    }
+}
