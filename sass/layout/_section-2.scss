@@ -55,24 +55,7 @@
     &__buttons {
         margin: 4rem;
         @include flex-center;
-        gap: 6rem;
-
-        &--projects,
-        &--resume {
-            font-size: 1.8rem;
-            text-align: center;
-            color: $black;
-            border-radius: 25px;
-            width: 18rem;
-            background-color: azure;
-            padding: 0.8rem 1.2rem;
-            transition: all .2s;
-
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
-        
+        gap: 6rem;        
     }
     
     &__right-box {

@@ -59,6 +59,22 @@ a {
   z-index: -1;
   opacity: .3; }
 
+.btn {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #000;
+  border-radius: 25px;
+  width: 16rem;
+  background-color: azure;
+  padding: 0.8rem 1.2rem;
+  transition: all .2s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover {
+    transform: scale(1.2); }
+  .btn:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -89,17 +105,10 @@ a {
       transform: rotateY(180deg); }
     .card__side--info {
       margin-bottom: 4rem; }
-    .card__side--btn {
-      background: #fff;
-      color: #000;
-      padding: 1rem 2.2rem;
-      border-radius: 25px;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-      .card__side--btn:active {
-        transform: translateY(0.2rem);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-      .card__side--btn:last-child {
-        margin-top: 2rem; }
+      .card__side--info ul {
+        list-style-type: none; }
+    .card__side--btn:last-child {
+      margin-top: 2rem; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -193,17 +202,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 6rem; }
-    .section-2__buttons--projects, .section-2__buttons--resume {
-      font-size: 1.8rem;
-      text-align: center;
-      color: #000;
-      border-radius: 25px;
-      width: 18rem;
-      background-color: azure;
-      padding: 0.8rem 1.2rem;
-      transition: all .2s; }
-      .section-2__buttons--projects:hover, .section-2__buttons--resume:hover {
-        transform: scale(1.2); }
   .section-2__right-box--photo-box {
     height: 100%;
     outline: solid 1.2rem #000;

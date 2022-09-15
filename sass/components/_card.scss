@@ -30,20 +30,14 @@
 
         &--info {
             margin-bottom: 4rem;
+
+            ul {
+                list-style-type: none;
+            }
         }
 
         &--btn {
-            background: $white;
-            color: $black;
-            padding: 1rem 2.2rem;
-            border-radius: 25px;
-            box-shadow: 0 1rem 2rem rgba($black,.2);
-    
-            &:active {
-                transform: translateY(.2rem);
-                box-shadow: 0 .5rem 1rem rgba($black,.2);
-            }
-
+     
             &:last-child {
                 margin-top: 2rem;
             }
