@@ -55,11 +55,10 @@
         &__projects {
             flex-direction: column;
             gap: 6rem;
-            // margin-top: 3rem;
 
             &:last-child {
                 margin-top: 6rem;
-                gap: 3rem;
+                gap: 2rem;
                 justify-content: flex-start;
             }
         }
@@ -87,6 +86,10 @@
     .section-4 {
 
         height: 20vh;
+
+        &__title {
+            margin: 5rem;
+        }
 
         &__content {
             width: 80%;

@@ -27,4 +27,29 @@
         display: none;
     }
 
+    .section-4 {
+
+        height: 24vh;
+
+        &__title {
+            margin: 5rem;
+        }
+
+        &__content {
+            width: 80%;
+        }
+
+        &__icons {
+            
+            &--github-icon,
+            &--linkedin-icon,
+            &--email-icon {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+
+
+
 }

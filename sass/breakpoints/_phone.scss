@@ -1,4 +1,9 @@
 @media (max-width: 480px) {
+
+    section {
+        overflow: hidden;
+    }
+
     .header {
 
         &__title-box {
@@ -110,10 +115,12 @@
 
     .section-4 {
 
-        height: 20vh;
+        height: 30vh;
 
         &__content {
             width: 100%;
+            @include flex-center;
+            flex-direction: column;
         }
 
         &__title {

@@ -272,6 +272,8 @@ a {
       height: 6rem; }
 
 @media (max-width: 480px) {
+  section {
+    overflow: hidden; }
   .header__title-box--text {
     font-size: 5.6rem; }
   .scroll-down__icon {
@@ -324,9 +326,13 @@ a {
   .desktop-card {
     display: none; }
   .section-4 {
-    height: 20vh; }
+    height: 30vh; }
     .section-4__content {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
     .section-4__title {
       margin: 3rem 2rem 2rem 2rem;
       font-size: 2.2rem; }
@@ -367,7 +373,7 @@ a {
     gap: 6rem; }
     .section-3__projects:last-child {
       margin-top: 6rem;
-      gap: 3rem;
+      gap: 2rem;
       justify-content: flex-start; }
   .card {
     width: 80%;
@@ -381,6 +387,8 @@ a {
     display: none; }
   .section-4 {
     height: 20vh; }
+    .section-4__title {
+      margin: 5rem; }
     .section-4__content {
       width: 80%; }
     .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
@@ -401,4 +409,13 @@ a {
   .mobile-card {
     display: block; }
   .desktop-card {
-    display: none; } }
+    display: none; }
+  .section-4 {
+    height: 24vh; }
+    .section-4__title {
+      margin: 5rem; }
+    .section-4__content {
+      width: 80%; }
+    .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
+      width: 5rem;
+      height: 5rem; } }
