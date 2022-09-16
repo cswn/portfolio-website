@@ -71,6 +71,7 @@
             width: 100%;
             height: 100%;
             clip-path: polygon(0 10%, 25% 0, 100% 0, 100% 90%, 75% 100%, 0 100%);
+            object-fit: cover;
         }
         
         &--image:hover {
