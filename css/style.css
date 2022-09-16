@@ -82,12 +82,12 @@ a {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  width: 30rem;
-  height: 35rem; }
+  width: 22%;
+  height: 100%; }
   .card__side {
     background: #17101d;
     font-size: 2rem;
-    height: 35rem;
+    height: 100%;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -98,7 +98,8 @@ a {
     .card__side--front {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
     .card__side--back {
       background-color: #9491AD;
       display: flex;
@@ -232,8 +233,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
-    margin-top: 8rem; }
+    gap: 10rem;
+    margin: 4rem 1rem 0 1rem;
+    height: 34%; }
   .section-3__title {
     text-transform: uppercase;
     letter-spacing: .8rem;
@@ -362,8 +364,11 @@ a {
     object-fit: cover; }
   .section-3__projects {
     flex-direction: column;
-    gap: 3rem;
-    margin-top: 3rem; }
+    gap: 6rem; }
+    .section-3__projects:last-child {
+      margin-top: 6rem;
+      gap: 3rem;
+      justify-content: flex-start; }
   .card {
     width: 80%;
     height: 12rem; }
@@ -381,3 +386,19 @@ a {
     .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
       width: 5rem;
       height: 5rem; } }
+
+@media (min-width: 821px) and (max-width: 1180px) {
+  .section-3__projects {
+    gap: 8rem;
+    margin: 4rem 1rem 0 1rem; }
+  .section-3__title {
+    margin: 4rem; }
+  .card {
+    width: 26%;
+    height: 24rem; }
+    .card__side {
+      height: 24rem; }
+  .mobile-card {
+    display: block; }
+  .desktop-card {
+    display: none; } }
