@@ -143,4 +143,34 @@
         margin-top: 0;
     }
 
+    .popup {
+        
+        &__content {
+            width: 85%;
+            height: 90%;
+            @include flex-center;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__left {
+            width: 0;
+        }
+
+        &__right {
+            width: 100%;
+            margin: 0;
+        }
+
+        &__info {
+            margin: 0;
+            padding: 1rem;
+    
+            &--summary {
+                margin: 2rem 0;
+            }
+
+        }
+    }
+
 }
