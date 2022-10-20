@@ -87,7 +87,8 @@ a {
   -moz-perspective: 150rem;
   position: relative;
   width: 22%;
-  height: 100%; }
+  height: 100%;
+  border-radius: 0.3rem; }
   .card__side {
     background: #17101d;
     font-size: 2rem;
@@ -105,7 +106,8 @@ a {
       align-items: center;
       text-align: center; }
     .card__side--back {
-      background-color: #9491AD;
+      background: #310150;
+      background: radial-gradient(circle, #310150 0%, #17101d 100%);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -292,14 +294,11 @@ a {
     align-items: center;
     gap: 6rem; }
   .section-2__right-box--photo-box {
-    height: 100%;
-    outline: solid 1.2rem #000;
-    outline-offset: -1.6rem; }
+    height: 100%; }
   .section-2__right-box--image {
     transition: all .8s;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0 10%, 25% 0, 100% 0, 100% 90%, 75% 100%, 0 100%);
     object-fit: cover; }
   .section-2__right-box--image:hover {
     transform: scaleX(1.2) scaleY(1.2); }
@@ -330,23 +329,16 @@ a {
     color: black; }
 
 .section-4 {
-  position: relative;
-  height: 24vh; }
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .section-4__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
     height: 100%; }
-  .section-4__title {
-    text-transform: uppercase;
-    letter-spacing: .8rem;
-    font-size: 7rem;
-    text-align: center;
-    margin: 6rem;
-    font-size: 3rem;
-    color: white; }
   .section-4__icons {
     display: flex;
     justify-content: center;

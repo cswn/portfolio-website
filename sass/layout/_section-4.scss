@@ -1,20 +1,11 @@
 .section-4 {
-    position: relative;
-    height: 24vh;
+    height: 12vh;
+    @include flex-center;
 
     &__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include flex-center;
         width: 40%; 
         height: 100%;
-    }
-
-    &__title {
-        @include section-title;
-        font-size: 3rem;
-        color: white;
     }
 
     &__icons {
