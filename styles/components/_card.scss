@@ -4,6 +4,7 @@
     position: relative;
     width: 22%;
     height: 100%;
+    border-radius: 0.3rem;
     
     &__side {
         background: $dark-purple;
@@ -23,7 +24,8 @@
         }
 
         &--back {
-            background-color: $bland-purple;
+            background: rgb(49,1,80);
+            background: radial-gradient(circle, rgba(49,1,80,1) 0%, rgba(23,16,29,1) 100%);
             @include flex-center;
             flex-direction: column;
             transform: rotateY(180deg);
