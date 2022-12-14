@@ -14,15 +14,18 @@
     opacity: 1;
     transform: translate(0); } }
 
+/* line 1, styles/base/_base.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
 
+/* line 7, styles/base/_base.scss */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
+/* line 12, styles/base/_base.scss */
 body {
   background-color: #000;
   background-repeat: no-repeat;
@@ -30,10 +33,12 @@ body {
   box-sizing: border-box;
   padding: 2rem; }
 
+/* line 20, styles/base/_base.scss */
 section {
   min-height: 100vh;
   width: 100%; }
 
+/* line 25, styles/base/_base.scss */
 .mobile-card {
   display: none; }
 
@@ -41,19 +46,23 @@ section {
   font-family: "Abel";
   src: url("../fonts/Abel-Regular.ttf"); }
 
+/* line 6, styles/base/_typography.scss */
 body {
   color: #fff;
   font-family: "Abel", sans-serif;
   font-weight: 100; }
 
+/* line 12, styles/base/_typography.scss */
 a {
   text-decoration: none;
   color: #fff; }
 
+/* line 17, styles/base/_typography.scss */
 .bold {
   font-weight: 600;
   font-size: 1.9rem; }
 
+/* line 1, styles/components/_background-video.scss */
 .background-video {
   width: 100vw;
   height: 100vh;
@@ -66,6 +75,7 @@ a {
   z-index: -1;
   opacity: .3; }
 
+/* line 1, styles/components/_button.scss */
 .btn {
   font-size: 1.8rem;
   text-align: center;
@@ -76,21 +86,25 @@ a {
   padding: 0.8rem 1.2rem;
   transition: all .2s;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  /* line 12, styles/components/_button.scss */
   .btn:hover {
     transform: scale(1.2); }
+  /* line 16, styles/components/_button.scss */
   .btn:active {
     transform: translateY(0.2rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+/* line 1, styles/components/_card.scss */
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   width: 22%;
-  height: 100%;
-  border-radius: 0.3rem; }
+  height: 100%; }
+  /* line 8, styles/components/_card.scss */
   .card__side {
     background: #17101d;
+    border-radius: .3rem;
     font-size: 2rem;
     height: 100%;
     transition: all .8s ease;
@@ -100,11 +114,13 @@ a {
     width: 100%;
     backface-visibility: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    /* line 21, styles/components/_card.scss */
     .card__side--front {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center; }
+    /* line 26, styles/components/_card.scss */
     .card__side--back {
       background: #310150;
       background: radial-gradient(circle, #310150 0%, #17101d 100%);
@@ -113,21 +129,28 @@ a {
       align-items: center;
       flex-direction: column;
       transform: rotateY(180deg); }
+    /* line 34, styles/components/_card.scss */
     .card__side--info {
       margin-bottom: 4rem; }
+      /* line 37, styles/components/_card.scss */
       .card__side--info ul {
         list-style-type: none; }
+    /* line 42, styles/components/_card.scss */
     .card__side--btn {
       width: 20rem;
       height: 5rem;
       font-size: 2.6rem; }
+      /* line 48, styles/components/_card.scss */
       .card__side--btn:last-child {
         margin-top: 2rem; }
+  /* line 54, styles/components/_card.scss */
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
+  /* line 58, styles/components/_card.scss */
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
+/* line 1, styles/components/_popup.scss */
 .popup {
   background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
@@ -139,11 +162,13 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: all .3s; }
+  /* line 14, styles/components/_popup.scss */
   .popup__title {
     color: #000;
     text-align: center;
     font-size: 3rem;
     margin: 2rem; }
+  /* line 21, styles/components/_popup.scss */
   .popup__content {
     position: absolute;
     top: 50%;
@@ -157,6 +182,7 @@ a {
     display: table;
     overflow: hidden;
     padding: 3rem; }
+  /* line 33, styles/components/_popup.scss */
   .popup__right {
     width: 55%;
     display: table-cell;
@@ -164,15 +190,19 @@ a {
     font-size: 1.8rem;
     padding: 2rem;
     vertical-align: middle; }
+  /* line 42, styles/components/_popup.scss */
   .popup__buttons {
     margin: 2rem 1rem; }
+  /* line 46, styles/components/_popup.scss */
   .popup__left {
     width: 45%;
     display: table-cell;
     vertical-align: middle; }
+  /* line 54, styles/components/_popup.scss */
   .popup__img--photo {
     display: block;
     width: 100%; }
+  /* line 60, styles/components/_popup.scss */
   .popup__info {
     margin: 2rem;
     display: flex;
@@ -183,16 +213,21 @@ a {
     background-color: rgba(148, 145, 173, 0.4);
     padding: 2rem;
     border-radius: 0.3rem; }
+    /* line 69, styles/components/_popup.scss */
     .popup__info--summary {
       margin: 2rem 0; }
+    /* line 73, styles/components/_popup.scss */
     .popup__info--list {
       list-style-type: none; }
+  /* line 78, styles/components/_popup.scss */
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  /* line 83, styles/components/_popup.scss */
   .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
+  /* line 89, styles/components/_popup.scss */
   .popup__close:link, .popup__close:visited {
     text-decoration: none;
     color: #000;
@@ -202,23 +237,28 @@ a {
     font-size: 3rem;
     display: inline-block;
     transition: all .2s; }
+  /* line 101, styles/components/_popup.scss */
   .popup__close:hover {
     color: darkviolet; }
 
+/* line 1, styles/components/_scroll-down.scss */
 .scroll-down {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  /* line 7, styles/components/_scroll-down.scss */
   .scroll-down__icon {
     width: 6rem;
     height: 6rem;
     transition: all .4s;
     animation: moveInBottom .5s ease-out; }
+    /* line 13, styles/components/_scroll-down.scss */
     .scroll-down__icon:hover {
       cursor: pointer;
       transform: scaleX(1.5) scaleY(1.5); }
 
+/* line 1, styles/layout/_footer.scss */
 .footer {
   background-color: #17101d;
   display: flex;
@@ -229,6 +269,7 @@ a {
   font-size: 1.8rem;
   margin-top: 2.5rem; }
 
+/* line 1, styles/layout/_header.scss */
 .header {
   min-height: 100vh;
   width: 100%;
@@ -236,12 +277,14 @@ a {
   background-size: cover;
   background-position: top;
   position: relative; }
+  /* line 9, styles/layout/_header.scss */
   .header__title-box {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase; }
+    /* line 16, styles/layout/_header.scss */
     .header__title-box--text {
       text-transform: uppercase;
       letter-spacing: .8rem;
@@ -250,8 +293,10 @@ a {
       margin: 6rem;
       animation: moveInTop .5s ease-out; }
 
+/* line 1, styles/layout/_section-2.scss */
 .section-2 {
   position: relative; }
+  /* line 4, styles/layout/_section-2.scss */
   .section-2__content {
     background-image: linear-gradient(rgba(23, 16, 29, 0.8), rgba(23, 16, 29, 0.8));
     background-size: cover;
@@ -260,51 +305,60 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
+  /* line 21, styles/layout/_section-2.scss */
   .section-2__left-box, .section-2__right-box {
     width: 35%;
     height: 45%; }
+  /* line 27, styles/layout/_section-2.scss */
   .section-2__left-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    /* line 31, styles/layout/_section-2.scss */
     .section-2__left-box--title {
       font-size: 6rem;
       text-align: center;
       letter-spacing: .3rem; }
+    /* line 37, styles/layout/_section-2.scss */
     .section-2__left-box--info {
       font-size: 2rem;
       padding: 1rem 1rem 0rem 2rem; }
+    /* line 42, styles/layout/_section-2.scss */
     .section-2__left-box--chess {
       text-decoration: underline;
       transition: all .2s ease-in-out; }
+      /* line 46, styles/layout/_section-2.scss */
       .section-2__left-box--chess:hover {
         padding: 0 .4rem;
         background: #fff;
         color: #17101d;
         text-decoration: none; }
+  /* line 55, styles/layout/_section-2.scss */
   .section-2__buttons {
     margin: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6rem; }
+  /* line 63, styles/layout/_section-2.scss */
   .section-2__right-box--photo-box {
     height: 100%; }
+  /* line 67, styles/layout/_section-2.scss */
   .section-2__right-box--image {
     transition: all .8s;
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  .section-2__right-box--image:hover {
-    transform: scaleX(1.2) scaleY(1.2); }
 
+/* line 1, styles/layout/_section-3.scss */
 .section-3 {
   position: relative; }
+  /* line 4, styles/layout/_section-3.scss */
   .section-3__content {
     background-color: #fff;
     position: absolute;
@@ -313,6 +367,7 @@ a {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 95vh; }
+  /* line 14, styles/layout/_section-3.scss */
   .section-3__projects {
     display: flex;
     justify-content: center;
@@ -320,6 +375,7 @@ a {
     gap: 10rem;
     margin: 4rem 1rem 0 1rem;
     height: 34%; }
+  /* line 21, styles/layout/_section-3.scss */
   .section-3__title {
     text-transform: uppercase;
     letter-spacing: .8rem;
@@ -328,96 +384,126 @@ a {
     margin: 6rem;
     color: black; }
 
+/* line 1, styles/layout/_section-4.scss */
 .section-4 {
   height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center; }
+  /* line 5, styles/layout/_section-4.scss */
   .section-4__content {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
     height: 100%; }
+  /* line 11, styles/layout/_section-4.scss */
   .section-4__icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem; }
+    /* line 15, styles/layout/_section-4.scss */
     .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
       width: 6rem;
       height: 6rem; }
 
 @media (max-width: 480px) {
+  /* line 3, styles/breakpoints/_phone.scss */
   section {
     overflow: hidden; }
+  /* line 11, styles/breakpoints/_phone.scss */
   .header__title-box--text {
     font-size: 5.6rem; }
+  /* line 19, styles/breakpoints/_phone.scss */
   .scroll-down__icon {
     width: 8rem;
     height: 8rem; }
+  /* line 25, styles/breakpoints/_phone.scss */
   .btn {
     font-size: 1.4rem;
     width: 10rem; }
+  /* line 31, styles/breakpoints/_phone.scss */
   .section-2__content {
     flex-direction: column;
     height: 100%; }
+  /* line 36, styles/breakpoints/_phone.scss */
   .section-2__left-box, .section-2__right-box {
     width: 100%;
     height: 100%; }
+  /* line 44, styles/breakpoints/_phone.scss */
   .section-2__left-box--title {
     font-size: 4rem;
     margin-top: 2.4rem; }
+  /* line 48, styles/breakpoints/_phone.scss */
   .section-2__left-box--info {
     font-size: 1.6rem; }
+  /* line 53, styles/breakpoints/_phone.scss */
   .section-2__buttons {
     gap: 3rem; }
+  /* line 59, styles/breakpoints/_phone.scss */
   .section-2__right-box--photo-box {
     outline: none; }
+  /* line 63, styles/breakpoints/_phone.scss */
   .section-2__right-box--image {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+  /* line 73, styles/breakpoints/_phone.scss */
   .section-3__content {
     height: auto;
     padding-bottom: 1.5rem; }
+  /* line 78, styles/breakpoints/_phone.scss */
   .section-3__title {
     margin: 4rem;
     font-size: 4rem; }
+  /* line 83, styles/breakpoints/_phone.scss */
   .section-3__projects {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem; }
+  /* line 90, styles/breakpoints/_phone.scss */
   .card {
     width: 90%;
     height: 10rem; }
+    /* line 94, styles/breakpoints/_phone.scss */
     .card__side {
       height: 10rem;
       font-size: 1.4rem; }
+      /* line 98, styles/breakpoints/_phone.scss */
       .card__side--btn {
         width: 12rem; }
+        /* line 101, styles/breakpoints/_phone.scss */
         .card__side--btn:last-child {
           margin-top: 0; }
+  /* line 108, styles/breakpoints/_phone.scss */
   .mobile-card {
     display: block; }
+  /* line 112, styles/breakpoints/_phone.scss */
   .desktop-card {
     display: none; }
+  /* line 116, styles/breakpoints/_phone.scss */
   .section-4 {
     height: 30vh; }
+    /* line 120, styles/breakpoints/_phone.scss */
     .section-4__content {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
+    /* line 126, styles/breakpoints/_phone.scss */
     .section-4__title {
       margin: 3rem 2rem 2rem 2rem;
       font-size: 2.2rem; }
+    /* line 133, styles/breakpoints/_phone.scss */
     .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
       width: 4.4rem;
       height: 4.4rem; }
+  /* line 142, styles/breakpoints/_phone.scss */
   .footer {
     margin-top: 0; }
+  /* line 148, styles/breakpoints/_phone.scss */
   .popup__content {
     width: 85%;
     height: 90%;
@@ -426,69 +512,92 @@ a {
     align-items: center;
     margin: 0;
     padding: 0; }
+  /* line 156, styles/breakpoints/_phone.scss */
   .popup__left {
     width: 0; }
+  /* line 160, styles/breakpoints/_phone.scss */
   .popup__right {
     width: 100%;
     margin: 0; }
+  /* line 165, styles/breakpoints/_phone.scss */
   .popup__info {
     margin: 0;
     padding: 1rem; }
+    /* line 169, styles/breakpoints/_phone.scss */
     .popup__info--summary {
       margin: 2rem 0; } }
 
 @media (min-width: 481px) and (max-width: 820px) {
+  /* line 4, styles/breakpoints/_tablet-vert.scss */
   .scroll-down__icon {
     width: 10rem;
     height: 10rem; }
+  /* line 10, styles/breakpoints/_tablet-vert.scss */
   .btn {
     width: 14rem; }
+  /* line 15, styles/breakpoints/_tablet-vert.scss */
   .section-2__content {
     flex-direction: column;
     height: 100%; }
+  /* line 20, styles/breakpoints/_tablet-vert.scss */
   .section-2__left-box, .section-2__right-box {
     width: 100%;
     height: 100%; }
+  /* line 26, styles/breakpoints/_tablet-vert.scss */
   .section-2__buttons {
     gap: 4rem; }
+  /* line 32, styles/breakpoints/_tablet-vert.scss */
   .section-2__left-box--info {
     text-align: center;
     padding: 2rem; }
+  /* line 40, styles/breakpoints/_tablet-vert.scss */
   .section-2__right-box--photo-box {
     display: flex;
     justify-content: center;
     align-items: center;
     outline: none; }
+  /* line 45, styles/breakpoints/_tablet-vert.scss */
   .section-2__right-box--image {
     width: 80%;
     height: 80%;
     object-fit: cover; }
+  /* line 55, styles/breakpoints/_tablet-vert.scss */
   .section-3__projects {
     flex-direction: column;
     gap: 6rem; }
+    /* line 59, styles/breakpoints/_tablet-vert.scss */
     .section-3__projects:last-child {
       margin-top: 6rem;
       gap: 2rem;
       justify-content: flex-start; }
+  /* line 68, styles/breakpoints/_tablet-vert.scss */
   .card {
     width: 80%;
     height: 12rem; }
+    /* line 72, styles/breakpoints/_tablet-vert.scss */
     .card__side {
       height: 12rem;
       font-size: 1.4rem; }
+  /* line 78, styles/breakpoints/_tablet-vert.scss */
   .mobile-card {
     display: block; }
+  /* line 82, styles/breakpoints/_tablet-vert.scss */
   .desktop-card {
     display: none; }
+  /* line 86, styles/breakpoints/_tablet-vert.scss */
   .section-4 {
     height: 20vh; }
+    /* line 90, styles/breakpoints/_tablet-vert.scss */
     .section-4__title {
       margin: 5rem; }
+    /* line 94, styles/breakpoints/_tablet-vert.scss */
     .section-4__content {
       width: 80%; }
+    /* line 100, styles/breakpoints/_tablet-vert.scss */
     .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
       width: 5rem;
       height: 5rem; }
+  /* line 111, styles/breakpoints/_tablet-vert.scss */
   .popup__content {
     width: 85%;
     height: 90%;
@@ -497,38 +606,52 @@ a {
     align-items: center;
     margin: 0;
     padding: 0; }
+  /* line 119, styles/breakpoints/_tablet-vert.scss */
   .popup__left {
     width: 0; }
+  /* line 123, styles/breakpoints/_tablet-vert.scss */
   .popup__right {
     width: 100%;
     margin: 0; }
+  /* line 128, styles/breakpoints/_tablet-vert.scss */
   .popup__info {
     margin: 0;
     padding: 1rem; }
+    /* line 132, styles/breakpoints/_tablet-vert.scss */
     .popup__info--summary {
       margin: 2rem 0; } }
 
 @media (min-width: 821px) and (max-width: 1180px) {
+  /* line 4, styles/breakpoints/_tablet-hor.scss */
   .section-3__projects {
     gap: 8rem;
     margin: 4rem 1rem 0 1rem; }
+  /* line 9, styles/breakpoints/_tablet-hor.scss */
   .section-3__title {
     margin: 4rem; }
+  /* line 14, styles/breakpoints/_tablet-hor.scss */
   .card {
     width: 26%;
     height: 24rem; }
+    /* line 17, styles/breakpoints/_tablet-hor.scss */
     .card__side {
       height: 24rem; }
+  /* line 22, styles/breakpoints/_tablet-hor.scss */
   .mobile-card {
     display: block; }
+  /* line 26, styles/breakpoints/_tablet-hor.scss */
   .desktop-card {
     display: none; }
+  /* line 30, styles/breakpoints/_tablet-hor.scss */
   .section-4 {
     height: 24vh; }
+    /* line 34, styles/breakpoints/_tablet-hor.scss */
     .section-4__title {
       margin: 5rem; }
+    /* line 38, styles/breakpoints/_tablet-hor.scss */
     .section-4__content {
       width: 80%; }
+    /* line 44, styles/breakpoints/_tablet-hor.scss */
     .section-4__icons--github-icon, .section-4__icons--linkedin-icon, .section-4__icons--email-icon {
       width: 5rem;
       height: 5rem; } }

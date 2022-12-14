@@ -4,10 +4,10 @@
     position: relative;
     width: 22%;
     height: 100%;
-    border-radius: 0.3rem;
     
     &__side {
         background: $dark-purple;
+        border-radius: .3rem;
         font-size: 2rem;
         height: 100%;
         transition: all .8s ease;
