@@ -5,9 +5,7 @@
     }
 
     .header {
-
         &__title-box {
-
             &--text {
                 font-size: 5.6rem;
             }
@@ -15,7 +13,6 @@
     }
 
     .scroll-down {
-
         &__icon {
             width: 8rem;
             height: 8rem;
@@ -24,7 +21,7 @@
 
     .btn {
         font-size: 1.4rem;
-        width: 10rem;
+        width: 100%;
     }
 
     .section-2 {
@@ -51,7 +48,10 @@
         }
 
         &__buttons {
-            gap: 3rem;
+            gap: 2rem;
+            margin: 2rem;
+            min-width: 20rem;
+            flex-direction: column;
         }
 
         &__right-box {
@@ -171,6 +171,23 @@
             }
 
         }
+    }
+
+    .section-blog {
+
+        &__title {
+            margin: 3rem;
+        }
+
+        &__blogs {
+            &--li {
+                padding: .8rem 2rem;
+                font-size: 2.4rem;
+                max-width: 90%;
+                height: 8rem;
+            }
+        }
+    
     }
 
 }

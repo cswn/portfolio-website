@@ -1,0 +1,44 @@
+.section-blog {
+    height: 30vh;
+    @include flex-center;
+
+    &__content {
+        @include flex-center;
+        flex-direction: column;
+        width: 100%; 
+        height: 100%;
+        background-color: rgba($dark-purple, .8);
+    }
+    
+    &__title {
+        @include section-title;
+        color: $white;
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+
+    &__blogs {
+        &--list {
+            @include flex-center;
+            flex-direction: column;
+        }
+
+        &--li {
+            font-size: 2.8rem;
+            border-radius: .3rem;
+            padding: .8rem 3rem;
+            border: 1px solid white;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $white;
+                color: $dark-purple;
+
+                & > a {
+                    color: $dark-purple;
+                }
+            }
+        }
+    }
+}
