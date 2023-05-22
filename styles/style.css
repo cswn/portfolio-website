@@ -445,27 +445,31 @@ a {
     color: #fff;
     font-size: 4rem;
     margin-top: 3rem; }
-  /* line 21, styles/layout/_section-blog.scss */
-  .section-blog__blogs--list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-  /* line 26, styles/layout/_section-blog.scss */
-  .section-blog__blogs--li {
-    font-size: 2.8rem;
-    border-radius: .3rem;
-    padding: .8rem 3rem;
-    border: 1px solid white;
-    cursor: pointer;
-    transition: all .2s; }
-    /* line 34, styles/layout/_section-blog.scss */
-    .section-blog__blogs--li:hover {
-      background-color: #fff;
-      color: #17101d; }
-      /* line 38, styles/layout/_section-blog.scss */
-      .section-blog__blogs--li:hover > a {
+  /* line 20, styles/layout/_section-blog.scss */
+  .section-blog__blogs {
+    padding-bottom: 2rem; }
+    /* line 22, styles/layout/_section-blog.scss */
+    .section-blog__blogs--list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem; }
+    /* line 28, styles/layout/_section-blog.scss */
+    .section-blog__blogs--li {
+      font-size: 2.8rem;
+      border-radius: .3rem;
+      padding: .8rem 3rem;
+      border: 1px solid white;
+      cursor: pointer;
+      transition: all .2s; }
+      /* line 36, styles/layout/_section-blog.scss */
+      .section-blog__blogs--li:hover {
+        background-color: #fff;
         color: #17101d; }
+        /* line 40, styles/layout/_section-blog.scss */
+        .section-blog__blogs--li:hover > a {
+          color: #17101d; }
 
 @media (max-width: 480px) {
   /* line 3, styles/breakpoints/_phone.scss */

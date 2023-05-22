@@ -18,9 +18,11 @@
     }
 
     &__blogs {
+        padding-bottom: 2rem;
         &--list {
             @include flex-center;
             flex-direction: column;
+            gap: 3rem;
         }
 
         &--li {
