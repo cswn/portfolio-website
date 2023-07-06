@@ -8,22 +8,6 @@
     <title>Clara Swanson</title>
 </head>
 <body>
-
-    <!-- <header class="header">
-
-        <div class="header__content">
-        
-            <div class="header__title-box">
-                <h1 class="header__title-box--text">Welcome</h1>
-            </div>
-
-            <div class="scroll-down">
-                <a class="scroll-down__link" href="#about"><img class="scroll-down__icon" alt="chevron down icon" src="./img/down-icon.svg"></a>
-            </div>
-
-        </div>
-    </header> -->
-
     <main>
         <section id="about" class="section-2">
             <div class="section-2__content">
@@ -108,7 +92,7 @@
 
                 <div class="section-3__projects">
 
-                    <div class="card desktop-card">
+                    <!-- <div class="card desktop-card">
                         <div class="card__side card__side--front">
                             <h2 class="card__side--title">SpaceX Launches</h2>
                         </div>
@@ -119,6 +103,21 @@
                     <a class="card mobile-card" href="#popup__spacex">
                         <div class="card__side card__side--front">
                             <h2 class="card__side--title">SpaceX Launches</h2>
+                        </div>
+                    </a> -->
+
+                    <div id="card-coming-soon" class="card desktop-card">
+                        <div class="card__banner">Coming Soon</div>
+                        <div class="card__side card__side--front">
+                            <h2 class="card__side--title">Visualizing Sorting Algorithms with Vue JS</h2>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <a class="btn card__side--btn" href="#popup__sorting-algos">View project &rarr;</a>
+                        </div>
+                    </div>
+                    <a id="card-coming-soon" class="card mobile-card" href="#popup__sorting-algos">
+                        <div class="card__side card__side--front">
+                            <h2 class="card__side--title">Visualizing Sorting Algorithms with Vue JS</h2>
                         </div>
                     </a>
 
@@ -279,7 +278,7 @@
             
         </div>
     </div>
-
+<!-- 
     <div class="popup" id="popup__spacex">
         <div class="popup__content">
             <div class="popup__left">
@@ -304,6 +303,36 @@
                     <div class="popup__buttons">
                         <a class="btn" href="https://claraswan.github.io/spaceXLaunches/" target="_blank">Live site &rarr;</a>
                         <a class="btn" href="https://github.com/claraswan/spaceXLaunches" target="_blank">Github repo &rarr;</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div> -->
+
+    <div class="popup" id="popup__sorting-algos">
+        <div class="popup__content">
+            <div class="popup__left">
+                <div class="popup__img--container">
+                    <img class="popup__img--photo" src="img/spacex.png" alt="demo photo">
+                </div>
+            </div>
+            <div class="popup__right">
+                <a href="#projects" class="popup__close">&times;</a>
+                <div class="popup__info">
+                    <h1 class="popup__title">Visualizing Sorting Algorithms with Vue JS</h1>
+                    <ul class="popup__info--list">
+                        <li><span class="bold">Language(s):</span> Vue.js</li>
+                        <li><span class="bold">Tools/Libraries:</span> Chart.js, Axios</li>
+                        <li><span class="bold">Topic/focus:</span> Vue, API requests</li>
+                    </ul>
+                    <p class="popup__info--summary">
+                        Coming soon
+                    </p>
+                    <div class="popup__buttons">
+                        <a class="btn" href="#" target="_blank">Live site &rarr;</a>
+                        <a class="btn" href="https://github.com/claraswan/sorting-algos" target="_blank">Github repo &rarr;</a>
                     </div>
                 </div>
                 

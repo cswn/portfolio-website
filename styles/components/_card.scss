@@ -1,3 +1,8 @@
+#card-coming-soon {
+    pointer-events: none;
+    opacity: .8;
+}
+
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -57,5 +62,21 @@
 
     &:hover &__side--back {
         transform: rotateY(0deg);
+    }
+
+    &__banner {
+        @include flex-center;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        color: white;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding: 1.5rem 2rem;
+        height: 4rem;
+        width: 30rem;
+        z-index: 10;
     }
 }

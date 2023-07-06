@@ -106,13 +106,18 @@ a {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 /* line 1, styles/components/_card.scss */
+#card-coming-soon {
+  pointer-events: none;
+  opacity: .8; }
+
+/* line 6, styles/components/_card.scss */
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   width: 22%;
   height: 100%; }
-  /* line 8, styles/components/_card.scss */
+  /* line 13, styles/components/_card.scss */
   .card__side {
     background: #17101d;
     border-radius: .3rem;
@@ -125,13 +130,13 @@ a {
     width: 100%;
     backface-visibility: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    /* line 21, styles/components/_card.scss */
+    /* line 26, styles/components/_card.scss */
     .card__side--front {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center; }
-    /* line 26, styles/components/_card.scss */
+    /* line 31, styles/components/_card.scss */
     .card__side--back {
       background: #310150;
       background: radial-gradient(circle, #310150 0%, #17101d 100%);
@@ -140,26 +145,43 @@ a {
       align-items: center;
       flex-direction: column;
       transform: rotateY(180deg); }
-    /* line 34, styles/components/_card.scss */
+    /* line 39, styles/components/_card.scss */
     .card__side--info {
       margin-bottom: 4rem; }
-      /* line 37, styles/components/_card.scss */
+      /* line 42, styles/components/_card.scss */
       .card__side--info ul {
         list-style-type: none; }
-    /* line 42, styles/components/_card.scss */
+    /* line 47, styles/components/_card.scss */
     .card__side--btn {
       width: 20rem;
       height: 5rem;
       font-size: 2.6rem; }
-      /* line 48, styles/components/_card.scss */
+      /* line 53, styles/components/_card.scss */
       .card__side--btn:last-child {
         margin-top: 2rem; }
-  /* line 54, styles/components/_card.scss */
+  /* line 59, styles/components/_card.scss */
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
-  /* line 58, styles/components/_card.scss */
+  /* line 63, styles/components/_card.scss */
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  /* line 67, styles/components/_card.scss */
+  .card__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    height: 4rem;
+    width: 30rem;
+    z-index: 10; }
 
 /* line 1, styles/components/_popup.scss */
 .popup {
@@ -280,30 +302,6 @@ a {
   font-size: 1.8rem;
   margin-top: 2.5rem; }
 
-/* line 1, styles/layout/_header.scss */
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("../img/space.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  /* line 9, styles/layout/_header.scss */
-  .header__title-box {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase; }
-    /* line 16, styles/layout/_header.scss */
-    .header__title-box--text {
-      text-transform: uppercase;
-      letter-spacing: .8rem;
-      font-size: 7rem;
-      text-align: center;
-      margin: 6rem;
-      animation: moveInTop .5s ease-out; }
-
 /* line 1, styles/layout/_section-2.scss */
 .section-2 {
   position: relative; }
@@ -356,13 +354,13 @@ a {
     justify-content: center;
     align-items: center;
     gap: 3rem; }
-  /* line 58, styles/layout/_section-2.scss */
+  /* line 57, styles/layout/_section-2.scss */
   .section-2__right-box--photo-box {
-    height: 100%; }
-  /* line 62, styles/layout/_section-2.scss */
+    height: 80%; }
+  /* line 61, styles/layout/_section-2.scss */
   .section-2__right-box--image {
     transition: all .8s;
-    width: 100%;
+    width: 75%;
     height: 100%;
     object-fit: cover; }
 
@@ -447,7 +445,7 @@ a {
     margin-top: 3rem; }
   /* line 20, styles/layout/_section-blog.scss */
   .section-blog__blogs {
-    padding-bottom: 2rem; }
+    padding-bottom: 4rem; }
     /* line 22, styles/layout/_section-blog.scss */
     .section-blog__blogs--list {
       display: flex;
